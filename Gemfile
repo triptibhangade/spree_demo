@@ -14,6 +14,7 @@ gem 'spree_gateway', '~> 3.4'
 #Spree simple_sales extension
 # gem 'spree_simple_sales', path: '../spree_simple_sales'
 
+gem 'pry'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
