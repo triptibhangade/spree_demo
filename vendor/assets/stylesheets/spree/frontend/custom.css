@@ -2,5 +2,27 @@
     color: white;
     text-align-last: end;
     font-size: 18px;
+    margin: -31px;
+    margin-right: 15px;
     font-weight: bold;
+}
+.logo {
+    height: 0px;
+    width: 30px;
+}
+
+.container {
+    width: 1170px;
+    margin-top: 37px;
+}
+img {
+    border: 0;
+    color: white;
+}
+.view{
+    color: red;
+    text-align-last: end;
+}
+.profile{
+    color: black;
 }
