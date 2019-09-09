@@ -24,5 +24,8 @@ img {
     text-align-last: end;
 }
 .profile{
-    color: black;
+    color: white;
+    margin-top: 15px;
+    margin-left: 795px;
+}
 }

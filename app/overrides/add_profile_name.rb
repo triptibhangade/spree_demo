@@ -1,7 +1,7 @@
 Deface::Override.new(virtual_path:'spree/shared/_main_nav_bar',
   name: 'add profile name to main nav bar',
-  insert_before: 'div#main-nav-bar',
-  text: ' <div class="profile">
-            
-          </div> '
+  insert_after: '#home-link',
+  text: ' <li class="profile">
+            <%= current_spree_user.try(:email) %>
+          </li> '
 )
