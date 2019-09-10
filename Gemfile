@@ -13,7 +13,7 @@ gem 'spree', '~> 3.7.0'
 gem 'spree_auth_devise', '~> 3.5'
 gem 'spree_gateway', '~> 3.4'
 #spree extension
-gem 'spree_extension_example', path: '../spree_extension_example'
+# gem 'spree_extension_example', path: '../spree_extension_example'
 #bootstrap form
 gem "bootstrap_form"
 #pry
