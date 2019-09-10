@@ -6,15 +6,27 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 
+
+
 # spree
 gem 'spree', '~> 3.7.0'
 gem 'spree_auth_devise', '~> 3.5'
 gem 'spree_gateway', '~> 3.4'
+#spree extension
+gem 'spree_extension_example', path: '../spree_extension_example'
+#bootstrap form
+gem "bootstrap_form"
+#pry
+gem 'pry'
+#bootstrap
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+
 
 #Spree simple_sales extension
 # gem 'spree_simple_sales', path: '../spree_simple_sales'
 
-gem 'pry'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -45,7 +57,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'spree_extension_example', path: '../spree_extension_example'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
