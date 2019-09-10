@@ -5,6 +5,7 @@ class Spree::ContactsController < Spree::StoreController
 
   def create
     @contact = Spree::Contact.create(contact_params)
+    ContactMailer.with(user: current_spree_user).thank_you_email.deliver_now
     flash[:notice] = "Successfully Submitted"
     redirect_to root_path
   end
