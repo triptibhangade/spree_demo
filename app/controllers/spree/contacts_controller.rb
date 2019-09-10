@@ -1,10 +1,11 @@
-class Spree::ContactsController < ApplicationController
+class Spree::ContactsController < Spree::StoreController
   def new
     @contact = Spree::Contact.new
   end
 
   def create
     @contact = Spree::Contact.create(contact_params)
+    flash[:notice] = "Successfully Submitted"
     redirect_to root_path
   end
   private
