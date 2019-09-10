@@ -26,3 +26,6 @@ img {
 .profile{
     margin-left: 767px;
 }
+.submit{
+    text-align-last: end; 
+}

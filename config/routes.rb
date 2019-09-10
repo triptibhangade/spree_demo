@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   Spree::Core::Engine.routes.draw do
-    # get :contact_us, to: "home#contact_us"
-     get '/contact_us', to: 'home#contact_us'
+    resources :contacts
   end
 end
