@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  default_url_options :host => "https://localhost:3000"
+
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to
   # Spree::ProductsController.
